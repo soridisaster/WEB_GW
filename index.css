@@ -369,7 +369,7 @@ input:focus{
    
 }
 /*ТЕСТ*/
-#test{
+#test, #test2{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -378,7 +378,7 @@ input:focus{
 
 
 }
-#testMain{
+#testMain, #testMain2{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
