@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Главная</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!--ЗАГОЛОВОК С КНОПКАМИ-->
+    <div class="all_items">
+        <div class="header">
+            <div ><button onclick="location.href='index.html'" class="bt butt">Главная</button></div>
+            
+            <div ><button onclick="location.href='index1.html'" class="bt butt1">Информация для пациентов</button></div>
+            <div ><button onclick="location.href='index2.html'" class="bt butt2">Личный кабинет</button></div>
+            <div class="buttons">
+                <div ><button onclick="location.href='#'" class="bt butt2" title="Ночная тема"><img src="sun_moon.png" ></button></div>
+                <div ><button onclick="location.href='#'" class="bt butt2" title="Версия для слабовидящих"><img src="eye.png" ></button></div>
+            </div>
+        </div>
+        <div class="body">
+            <!--НАЗВАНИЕ И ОКНО ВХОДА-->
+            <div class="welcome">
+                <p class="head_text_main">Добро пожаловать в <strong>систему мониторинга и обратной связи операционных пациентов</strong> торакального отделения </p>
+                <!--Кнопка записаться на консультацию к торакальному хирургу-->
+                 
+                
+                    
+                <div class="question_plane_all">
+                    <div class="question_plane">
+                        <form action="question" ><div class="form_question">
+                            <div><input type="text" placeholder="Фамилия" autofocus></div>
+                            <div><input type="text" placeholder="Имя" ></div>
+                            <div><input type="email" placeholder="Емейл" ></div>
+                            <div> <input type="text" maxlength="200" placeholder="Опишите вашу проблему"> </div>
+                            <div><input type="file"  id="add_file" multiple>
+                                <label for="add_file">
+                                    <span class="add_file_text">Добавить файл</span>
+
+                                </label>
+                            </div>
+
+                        </div>
+                        </form>
+                    </div>
+                    <p class="regular_text5">Вам ответят на указанную вами почту в течение 3 дней, не считая праздников и выходных.</p>
+                    <div class="b_start"><button onclick="summary();" class="bt butt1"><img src="butt_start.png"><p class="p_start">Задать вопрос</p></button></div>
+                </div>
+
+            </div>
+            <!--ОПИСАНИЕ САЙТА-->
+            <div class="intro">
+                <p class="regular_text">Операция - это важный этап в жизни человека. Пациенты часто волнуются сильнее из-за неизвестности: какие документы
+                    собирать, что будет в послеоперационном периоде, какие симптомы нормальны, а при каких срочно обраться к лечащему врачу. 
+                    Данное приложение предназначено для осведомления операционных пациентов торакального отделения. 
+                </p>
+               
+                
+                <p class="head_text">Что вы найдете на нашем сайте? </p>
+                <div class="number_about_all">
+                    <div class="number_about">
+                        <img class="number" src="p1.png">
+                        <p class="regular_text2">Какие документы собирать</p>
+                    </div>
+                    <div class="number_about">
+                        <img class="number" src="p2.png">
+                        <p class="regular_text2">Чего ожидать от операции</p>
+                    </div>
+                </div>
+                <div class="number_about_all">
+                    <div class="number_about">
+                        <img class="number" src="p3.png">
+                        <p class="regular_text2">Кому противопаказано делать ту или иную операцию</p>
+                    </div>
+                    <div class="number_about">
+                        <img class="number" src="p4.png">
+                        <p class="regular_text2">Пройти тесты и посмотреть статистику по другим пациентам</p>
+                    </div>
+                </div>
+                <p class="head_text">Перечень пациентов для направления на консультацию торакального хирурга</p>
+                <div class="head_text_plane_perech"><ul>
+                    <li>Опухоли лёгких различной природы</li>
+                    <li>Опухоли средостения, вилочковой железы</li>
+                    <li>Опухоли грудной стенки</li>
+                    <li>Опухоли пищевода и кардиального отдела желудка</li>
+                    <li>Дивертикулы пищевода</li>
+                    <li>Стенозы пищевода</li>
+                    <li>Грыжи пищеводного отверстия диафрагмы</li>
+                    <li>Другие диафрагмальные грыжи</li>
+                    <li>Буллезная болезнь легких</li>
+                    <li>Диссеминация легких неясного гнезда</li>
+                    <li>Внутригрудная лимфоаденопатия</li>
+                    <li>Гипергидроз (повышенная потливость ладоней)</li>
+                    <li>Болезнь Рейно (ангиотрофоневроз верхних конечностей)</li>
+                    <li>Последствия операция на органах грудной полости</li>
+                    <li>Последствия травм грудной клетки</li>
+                    <li>Плевриты различной природы</li>
+                    <li>Пневмоторакс</li>
+                </ul></div>
+                
+                
+
+                
+                <!--СТАТИСТИКА ТУТ-->
+                <p class="head_text">Статистика торакального отделения</p>
+
+
+                <div class="adaptivny-slayder">
+                    <input type="radio" name="kadoves" id="slaid1" checked>
+                    <input type="radio" name="kadoves" id="slaid2">
+                    <input type="radio" name="kadoves" id="slaid3">
+                    <input type="radio" name="kadoves" id="slaid4">
+                    
+                    <div class="kadoves">
+                        <label for="slaid1"></label>
+                        <label for="slaid2"></label>
+                        <label for="slaid3"></label>
+                        <label for="slaid4"></label>
+                    </div>
+                    
+                    <div class="adaptivny-slayder-lasekun">
+                        <div class="abusteku-deagulus">
+                            <img src="stat3.png"/>
+                            <img src="stat3.png"/>
+                            <img src="stat3.png"/>
+                            <img src="stat3.png"/>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--КНОПКА НАВЕРХ-->
+    <a href="#top" ID = "toTop" title="Наверх"><img src="toTop.png"></a> 
+    
+    
+
+    <!--ПОДВАЛ УРААА-->
+        <div class="footer">
+            <div class="footer_text">
+                <div><a href="" class="a_foot">Информация для пациентов</a></div>
+                <div><a href="" class="a_foot">Личный кабинет</a></div>
+                <div><a href="" class="a_foot">Ночная тема</a></div>
+                <div><a href="" class="a_foot">Версия для слабовидящих</a></div>
+                <p class="a_foot">Саратов 2022-2023</p>
+            </div>
+            <div class="footer_text">
+                <p class="a_foot">Разработка дизайна и ПО</p>
+                <p class="a_foot">Сухарева Виктория<a> soridisaster01@mail.ru</a></p>
+            </div>
+            <div class="footer_text">
+                <p class="a_foot">Консультирующий хирург торакального отделения</p>
+                <p class="a_foot">Сухарев Роман Викторович<a> suharev@list.ru</a></p>
+            </div>
+
+
+        </div>
+
+    
+    
+</body>
+</html>
